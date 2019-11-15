@@ -1,0 +1,11 @@
+name: default
+
+kind: pipeline
+type: docker
+
+steps:
+- name: python-project-test
+  image: python
+  commands:
+    - pip install -r requirements.txt
+    - pytest
