@@ -12,8 +12,6 @@ steps:
   settings:
     tags: ${DRONE_TAG##v}      
   when:
-    branch:
-    - master
     event:
     - push
     - tag
