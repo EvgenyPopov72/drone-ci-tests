@@ -9,6 +9,9 @@ steps:
   commands:
     - pip install python-project/.
     - pytest python-project
+  settings:
+    tags: ${DRONE_TAG##v}      
   when:
+    branch: master
     event:
     - tag
