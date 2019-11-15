@@ -11,5 +11,4 @@ steps:
     - pytest python-project
   when:
     event:
-    - push
     - tag
