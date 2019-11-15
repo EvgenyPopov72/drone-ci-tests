@@ -9,9 +9,8 @@ steps:
   commands:
     - pip install python-project/.
     - pytest python-project
-  settings:
-    tags: ${DRONE_TAG##v}      
   when:
-    branch: master
+    branch: 
+    - refs/tags/v[0-9].[0-9]
     event:
     - tag
